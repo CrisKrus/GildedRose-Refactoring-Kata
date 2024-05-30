@@ -25,4 +25,20 @@ class GildedRoseTest {
         Approvals.verifyAll("foo", Arrays.asList(items));
     }
 
+    @Test
+    void AgedBrie() {
+        Item[] items = new Item[] {
+            new Item("Aged Brie", 0, 0),
+            new Item("Aged Brie", 5, 0),
+            new Item("Aged Brie", 10, 0),
+            new Item("Aged Brie", 0, 5),
+            new Item("Aged Brie", 5, 5),
+            new Item("Aged Brie", 10, 5),
+        };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+
+        Approvals.verifyAll("foo", Arrays.asList(items));
+    }
+
 }

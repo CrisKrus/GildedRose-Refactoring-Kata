@@ -1,0 +1,6 @@
+foo[0] = Aged Brie, -1, 2
+foo[1] = Aged Brie, 4, 1
+foo[2] = Aged Brie, 9, 1
+foo[3] = Aged Brie, -1, 7
+foo[4] = Aged Brie, 4, 6
+foo[5] = Aged Brie, 9, 6
