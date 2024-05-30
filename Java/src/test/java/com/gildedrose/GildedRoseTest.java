@@ -1,6 +1,9 @@
 package com.gildedrose;
 
+import org.approvaltests.Approvals;
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -11,7 +14,8 @@ class GildedRoseTest {
         Item[] items = new Item[] { new Item("foo", 0, 0) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals("fixme", app.items[0].name);
+
+        Approvals.verifyAll("foo", Arrays.asList(items));
     }
 
 }
