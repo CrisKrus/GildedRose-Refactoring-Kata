@@ -1,6 +1,0 @@
-Sulturas, Hand of Ragnaros[0] = Sulfuras, Hand of Ragnaros, 0, 0
-Sulturas, Hand of Ragnaros[1] = Sulfuras, Hand of Ragnaros, 5, 0
-Sulturas, Hand of Ragnaros[2] = Sulfuras, Hand of Ragnaros, 10, 0
-Sulturas, Hand of Ragnaros[3] = Sulfuras, Hand of Ragnaros, 0, 5
-Sulturas, Hand of Ragnaros[4] = Sulfuras, Hand of Ragnaros, 5, 5
-Sulturas, Hand of Ragnaros[5] = Sulfuras, Hand of Ragnaros, 10, 5
