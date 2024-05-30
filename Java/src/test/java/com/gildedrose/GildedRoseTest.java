@@ -11,7 +11,14 @@ class GildedRoseTest {
 
     @Test
     void foo() {
-        Item[] items = new Item[] { new Item("foo", 0, 0) };
+        Item[] items = new Item[] {
+            new Item("foo", 0, 0),
+            new Item("foo", 5, 0),
+            new Item("foo", 10, 0),
+            new Item("foo", 0, 5),
+            new Item("foo", 5, 5),
+            new Item("foo", 10, 5),
+        };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
 
