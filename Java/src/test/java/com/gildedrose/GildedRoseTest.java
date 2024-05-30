@@ -38,7 +38,7 @@ class GildedRoseTest {
         GildedRose app = new GildedRose(items);
         app.updateQuality();
 
-        Approvals.verifyAll("foo", Arrays.asList(items));
+        Approvals.verifyAll("Aged Brie", Arrays.asList(items));
     }
 
     @Test
@@ -54,7 +54,7 @@ class GildedRoseTest {
         GildedRose app = new GildedRose(items);
         app.updateQuality();
 
-        Approvals.verifyAll("foo", Arrays.asList(items));
+        Approvals.verifyAll("Sulturas, Hand of Ragnaros", Arrays.asList(items));
     }
 
     @Test
@@ -70,7 +70,7 @@ class GildedRoseTest {
         GildedRose app = new GildedRose(items);
         app.updateQuality();
 
-        Approvals.verifyAll("foo", Arrays.asList(items));
+        Approvals.verifyAll("Backstage passes", Arrays.asList(items));
     }
 
 }
