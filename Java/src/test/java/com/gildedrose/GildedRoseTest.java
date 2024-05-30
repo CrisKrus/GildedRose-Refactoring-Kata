@@ -57,4 +57,20 @@ class GildedRoseTest {
         Approvals.verifyAll("foo", Arrays.asList(items));
     }
 
+    @Test
+    void BackstagePassesToATafkal80etcConcert() {
+        Item[] items = new Item[] {
+            new Item("Backstage passes to a TAFKAL80ETC concert", 0, 0),
+            new Item("Backstage passes to a TAFKAL80ETC concert", 5, 0),
+            new Item("Backstage passes to a TAFKAL80ETC concert", 10, 0),
+            new Item("Backstage passes to a TAFKAL80ETC concert", 0, 5),
+            new Item("Backstage passes to a TAFKAL80ETC concert", 5, 5),
+            new Item("Backstage passes to a TAFKAL80ETC concert", 10, 5),
+        };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+
+        Approvals.verifyAll("foo", Arrays.asList(items));
+    }
+
 }
