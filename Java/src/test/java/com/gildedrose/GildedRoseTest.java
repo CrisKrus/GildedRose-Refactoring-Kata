@@ -41,4 +41,20 @@ class GildedRoseTest {
         Approvals.verifyAll("foo", Arrays.asList(items));
     }
 
+    @Test
+    void SulfurasHadnOfRagnaros() {
+        Item[] items = new Item[] {
+            new Item("Sulfuras, Hand of Ragnaros", 0, 0),
+            new Item("Sulfuras, Hand of Ragnaros", 5, 0),
+            new Item("Sulfuras, Hand of Ragnaros", 10, 0),
+            new Item("Sulfuras, Hand of Ragnaros", 0, 5),
+            new Item("Sulfuras, Hand of Ragnaros", 5, 5),
+            new Item("Sulfuras, Hand of Ragnaros", 10, 5),
+        };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+
+        Approvals.verifyAll("foo", Arrays.asList(items));
+    }
+
 }
